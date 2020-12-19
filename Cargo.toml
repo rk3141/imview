@@ -3,7 +3,8 @@ name = "imview"
 version = "0.1.0"
 authors = ["rishit-khandelwal <rishitkh@gmail.com>"]
 edition = "2018"
-
+description = "A cli tool to view images on the terminal."
+license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
