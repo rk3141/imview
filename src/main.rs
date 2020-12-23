@@ -8,10 +8,12 @@ fn main() {
         return;
     }
     let img = image::open(arg[1].clone()).unwrap();
-    let (width, _) = img.dimensions();
+    let (width, height) = img.dimensions();
 
     for (i, (_, _, p)) in img.pixels().enumerate() {
-        pallete::printbg(" ", pallete::Color::Rgb(p.0[0], p.0[1], p.0[2])).unwrap();
+        for _ in 0..width / height * 2 {
+            pallete::printbg(" ", pallete::Color::Rgb(p.0[0], p.0[1], p.0[2])).unwrap();
+        }
         if i % width as usize == width as usize - 1 {
             print!("\n");
         }
