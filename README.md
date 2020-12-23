@@ -1,6 +1,6 @@
 # imview
 
-<ing src="./sample.png">
+<img src="./sample.png">
 
 A cli tool to view images on the terminal.
 
